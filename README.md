@@ -9,14 +9,14 @@ YouTube is a popular platform for videos that people use for entertainment, educ
 ## **Table of Contents**
 
 - [ETL Process](#etl-process)
-    - Step 1: Extract
-    - Step 2: Transform
-    - Step 3: Load
-- Schema
-- Setup
-- Sample Queries
-- Status
-- Team Members
+    - [Step 1: Extract](#step-1-extract)
+    - [Step 2: Transform](#step-2-transform)
+    - [Step 3: Load](#step-3-load)
+- [Schema](#schema)
+- [Setup](#setup)
+- [Sample Queries](#sample-queries)
+- [Status](#status)
+- [Team Members](#team-members)
 
 ## **ETL Process**
 
