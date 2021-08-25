@@ -8,7 +8,7 @@ YouTube is a popular platform for videos that people use for entertainment, educ
 
 ## **Table of Contents**
 
-- ETL Process
+- [ETL Process](#etl-process)
     - Step 1: Extract
     - Step 2: Transform
     - Step 3: Load
@@ -23,9 +23,9 @@ YouTube is a popular platform for videos that people use for entertainment, educ
 ## Step 1: Extract
 
 ### YouTube Data Extraction
-- Downloaded '.csv files' and 'json files' from [Kaggle.com](https://www.kaggle.com/datasnaek/youtube-new)
+- Downloaded `.csv files` and `json files` from [Kaggle.com](https://www.kaggle.com/datasnaek/youtube-new)
 - Reviewed the data sets available and narrowed in on the files for Canada (CA), Mexico (MX), and the United States (US) to focus on North America
-- Read the '.csv file' and 'json file' into Jupyter Notebook for cleaning and transformation 
+- Read the `.csv file` and `json file` into Jupyter Notebook for cleaning and transformation 
 
 ## Step 2: Transform
 
@@ -33,23 +33,23 @@ YouTube is a popular platform for videos that people use for entertainment, educ
 - After extracting the files, the team analyzed the dataframes to assess what information was relevant for  the final database
 - The team decided to keep all of the variables except for the publish_time, thumbnail_link, and description
 - Three dataframes were created for the 3 different countries (CA, MX, US) being analyzed
-- Looping through the 'json file' proved to be challenging and required the following additional steps to work through the error messages:
-    - The team discovered that a regular store of the 'json file' into a dataframe resulted in "missing" data
+- Looping through the `json file` proved to be challenging and required the following additional steps to work through the error messages:
+    - The team discovered that a regular store of the `json file` into a dataframe resulted in "missing" data
     - In order to obtain the data, an alternate approach was used to parse out the "missing", non-traversed elements into lists to append to the dataframe
-- Merging the '.csv file' and 'json file' also required some finesse:
-    - In order to prevent issues/errors with nt64 when trying to merge on 'category_id', an integer conversion was made on the 'id_list' in the 'json file' dataframe
+- Merging the `.csv file` and `json file` also required some finesse:
+    - In order to prevent issues/errors with nt64 when trying to merge on `category_id`, an integer conversion was made on the `id_list` in the `json file` dataframe
     - In preparation for the final merge, a country code was added to distinguish country of origin
     - pd.concat was used merge the three countries cleaned dataframes into one large combined dataframe
 
 ## Step 3: Load
 
-- Once the merged dataframe were properly formatted, cleaned and transformed, the '.csv file' was loaded into a SQL database via the following steps:
+- Once the merged dataframe were properly formatted, cleaned and transformed, the `.csv file` was loaded into a SQL database via the following steps:
     1. A database was created in pgAdmin4 called [need name of Felicia's database]
-    2. A table was created to correspond with the '.csv file' from the combined countries information
-    3. The '.csv file' was then imported into the SQL database
-- When trying to import the '.csv file' the following error messge was received by the team: "ERROR: unterminated csv quoted field"
+    2. A table was created to correspond with the `.csv file` from the combined countries information
+    3. The `.csv file` was then imported into the SQL database
+- When trying to import the `.csv file` the following error messge was received by the team: "ERROR: unterminated csv quoted field"
 - The team took the following steps to navigate through the challenge:
-    1. Update the 'trending_date' from DATE to VARCHAR to accomodate the atypical date entry style
+    1. Update the `trending_date` from DATE to VARCHAR to accomodate the atypical date entry style
     2. Removed the character limitations that had been included for several of the fields with VARCHAR
     3. Set the Escape criteria to "
     
