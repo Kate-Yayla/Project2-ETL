@@ -51,15 +51,15 @@ YouTube is a popular platform for videos that people use for entertainment, educ
 ## Step 3: Load
 
 - Once the merged dataframe were properly formatted, cleaned and transformed, the combined countries `.csv file` was loaded into a SQL database via the following steps:
-    1. A database was created in pgAdmin4 called "youtube-trends"
-    2. A table called "combined" was created to correspond with the `.csv file` from the combined countries information
-    3. The `.csv file` was then imported into the SQL database
+    - A database was created in pgAdmin4 called "youtube-trends"
+    - A table called "combined" was created to correspond with the `.csv file` from the combined countries information
+    - The `.csv file` was then imported into the SQL database
 - When trying to import the `.csv file` the following error messge was received by the team: "ERROR: unterminated csv quoted field"
 - The team took the following steps to navigate through the challenge:
-    1. Update the `trending_date` from DATE to VARCHAR to accomodate the atypical date entry style
-    2. Removed the character limitations that had been included for several of the fields with VARCHAR
-    3. Set the Escape criteria to "
-    4. Created a combined_id column header for the index
+    - Update the `trending_date` from DATE to VARCHAR to accomodate the atypical date entry style
+    - Removed the character limitations that had been included for several of the fields with VARCHAR
+    - Set the Escape criteria to "
+    - Created a combined_id column header for the index
     
 ## **Schema**
 
@@ -68,22 +68,30 @@ YouTube is a popular platform for videos that people use for entertainment, educ
 ## **Sample Queries**
 
 In order to provide direction in regards to which categories and channels would be optimal for advertizing, the team ran several queries including:
+
 - Top categories in countries
+
 ![top](Images/top_category_code.png)
+
 ![top](Images/top_categories_countries.png)
+
 - Top channels in countries
+
 ![top](Images/top_channel_code.png)
+
 ![top](Images/top_channels_countries.png)
+
 - Lowest views in countries
+
 ![top](Images/lowest_views_code.png)
+
 ![top](Images/lowest_channels_countries.png)
 
 Add YouTube link to a top video in 2017
 
 ## **Status**
 
-Currently under construction*.
-![cone](Images/cone.png)
+*This project is complete.*
 
 ## **Team Members**
 
