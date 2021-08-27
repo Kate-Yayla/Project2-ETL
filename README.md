@@ -87,7 +87,7 @@ In order to provide direction in regards to which categories and channels would 
 
 ![top](Images/lowest_channels_countries.png)
 
-Top YouTube 
+**Top YouTube Channel ("ibighit") Video Example**
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/qxrrhNfse0w/0.jpg)](http://www.youtube.com/watch?v=qxrrhNfse0w)
 
