@@ -69,25 +69,28 @@ YouTube is a popular platform for videos that people use for entertainment, educ
 
 In order to provide direction in regards to which categories and channels would be optimal for advertizing, the team ran several queries including:
 
-- Top categories in countries
+- **Top categories in countries**
 
 ![top](Images/top_category_code.png)
 
 ![top](Images/top_categories_countries.png)
 
-- Top channels in countries
+- **Top channels in countries**
 
 ![top](Images/top_channel_code.png)
 
 ![top](Images/top_channels_countries.png)
 
-- Lowest views in countries
+- **Lowest views in countries**
 
 ![top](Images/lowest_views_code.png)
 
 ![top](Images/lowest_channels_countries.png)
 
-Add YouTube link to a top video in 2017
+Top YouTube 
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/qxrrhNfse0w/0.jpg)](http://www.youtube.com/watch?v=qxrrhNfse0w)
+
 
 ## **Status**
 
